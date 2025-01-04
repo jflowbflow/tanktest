@@ -47,9 +47,9 @@
 		<script>
 			var canvas = document.querySelector("#unity-canvas");
 			var config = {
-				dataUrl: "Build/build.data.gz",
-				frameworkUrl: "Build/build.framework.js.gz",
-				codeUrl: "Build/build.wasm.gz",
+				dataUrl: "Build/build.data",
+				frameworkUrl: "Build/build.framework.js",
+				codeUrl: "Build/build.wasm",
 				streamingAssetsUrl: "StreamingAssets",
 				companyName: "PhotonEngine",
 				productName: "Tanknarok Fusion Demo",
@@ -75,14 +75,14 @@
 					w = window.innerWidth;
 					h = window.innerHeight;
 
-					var r = 1080 / 1920;
+					var r = 1080 / 1440;
 
 					if (w * r > window.innerHeight) {
 						w = Math.min(w, Math.ceil(h / r));
 					}
 					h = Math.floor(w * r);
 				} else {
-					w = 1920;
+					w = 1440;
 					h = 1080;
 				}
 
